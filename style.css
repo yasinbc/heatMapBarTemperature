@@ -10,4 +10,9 @@
     height: 10px;
     background-color: #003f5c;
     border-radius: 5px;
+    margin-left: 3px;
+ 
+    background-color: black;
+    display: inline-block;
+
   }

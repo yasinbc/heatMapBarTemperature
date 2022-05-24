@@ -10,9 +10,21 @@ function move() {
         clearInterval(id);
         i = 0;
       } else {
-        width++;
-        elem.style.width = width + "%";
+          if(getInputValue() >= 100){
+              null;
+          }else{
+              width = getInputValue();
+              elem.style.width = width + "%";
+
+          }
       }
     }
   }
+} 
+
+function getInputValue(){
+    // Selecting the input element and get its value 
+    var inputVal = document.getElementById("getTemperature").value;
+    
+    return inputVal;
 }
